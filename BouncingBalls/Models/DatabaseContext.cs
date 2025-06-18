@@ -10,7 +10,7 @@ namespace BouncingBalls.Models
     {
         private readonly string _connectionString;
 
-        public DatabaseContext(string connectionString = "Host=localhost;Port=5432;Database=bouncing_balls;Username=postgres;Password=Degroshechka1")
+        public DatabaseContext(string connectionString = "Host=localhost;Port=5432;Database=bouncing_balls;Username=postgres;Password=password")
         {
             _connectionString = connectionString;
             InitializeDatabase();
