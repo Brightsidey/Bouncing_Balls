@@ -39,7 +39,7 @@ namespace BouncingBalls.Models
                     }
 
                     string checkEmptyQuery = "SELECT COUNT(*) FROM Balls";
-                    using (var command = new NpgsqlCommand(null, connection))
+                    using (var command = new NpgsqlCommand(checkEmptyQuery, connection))
                     {
                         long count = (long)command.ExecuteScalar();
                         if (count == 0)
